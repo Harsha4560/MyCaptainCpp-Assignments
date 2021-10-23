@@ -1,0 +1,22 @@
+#include<iostream>
+
+using namespace std;
+int main()
+{
+    int n;
+    float a[10], *b;
+    cout<<"Enter the number of elements: ";
+    cin>>n;
+    cout<<"Enter elements: ";
+    for(int i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+    b = a;
+    cout<<"You Entered :";
+    for(int i=0;i<n;i++)
+    {
+        cout<<*(b+i)<<endl;
+    }
+    return 0;
+}
